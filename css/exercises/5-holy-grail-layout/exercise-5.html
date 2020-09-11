@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Grail Layout</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Header</h1>
+  </div>
+  <div class="body-container">
+    <div class="body body1">
+      navigation
+    </div>
+    <div class="body body2">
+      contect
+    </div>
+    <div class="body body3">
+      advertisement
+    </div>
+  </div>
+  <div class="footer">
+    <h1>Footer</h1>
+  </div>
+
+  <style>
+    * { 
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      
+    }
+
+    .header{
+    
+      background-color:  darkcyan;
+      height: 20%;
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+      
+      
+      
+    }
+
+    .body-container{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      height: 60%;
+    }
+  
+    .body {
+      display: flex;
+      border: 1px solid #fff;
+      background-color: #ff7f50;
+      justify-content: center;
+      align-items: center;
+    }
+    .body1{
+      flex-grow: 2;
+    }
+    .body2{
+      flex-grow: 6;
+    }
+    .body3{
+      flex-grow: 2;
+    }
+
+    .footer{
+      background-color: khaki;
+      height: 20%;
+
+      display: flex;
+      padding: 50px;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  </style>
+</body>
+</html>
